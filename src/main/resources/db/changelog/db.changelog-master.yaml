@@ -1,0 +1,75 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-lesson.yaml
+  - changeSet:
+      id: 1
+      author: Albert Khalimov
+      changes:
+        - createTable:
+            tableName: books
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(255)
+                  constraints:
+                    unique: true
+                    nullable: false
+              - column:
+                  name: author
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: genre
+                  type: varchar(255)
+  - changeSet:
+      id: 2
+      author: Albert Khalimov
+      comment: "Add test books"
+      changes:
+        - insert:
+            tableName: books
+            columns:
+              - column:
+                  name: title
+                  value: "О дивный новый мир"
+              - column:
+                  name: author
+                  value: "Олдос Леонард Хаксли"
+              - column:
+                  name: genre
+                  value: "Классическая художественная проза"
+        - insert:
+            tableName: books
+            columns:
+              - column:
+                  name: title
+                  value: "Триумфальная арка"
+              - column:
+                  name: author
+                  value: "Эрих Ремарк"
+              - column:
+                  name: genre
+                  value: "Роман"
+        - insert:
+            tableName: books
+            columns:
+              - column:
+                  name: title
+                  value: "Джек Лондон"
+              - column:
+                  name: author
+                  value: "Мартин Иден"
+              - column:
+                  name: genre
+                  value: "Роман"
+      rollback:
+        - delete:
+            tableName: books
+            where: username in ('postgres')
