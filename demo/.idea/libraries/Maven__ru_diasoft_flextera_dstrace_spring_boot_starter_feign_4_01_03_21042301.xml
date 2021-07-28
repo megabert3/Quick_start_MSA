@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.diasoft.flextera:dstrace-spring-boot-starter-feign:4.01.03-21042301">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/flextera/dstrace-spring-boot-starter-feign/4.01.03-21042301/dstrace-spring-boot-starter-feign-4.01.03-21042301.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/flextera/dstrace-spring-boot-starter-feign/4.01.03-21042301/dstrace-spring-boot-starter-feign-4.01.03-21042301-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/flextera/dstrace-spring-boot-starter-feign/4.01.03-21042301/dstrace-spring-boot-starter-feign-4.01.03-21042301-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

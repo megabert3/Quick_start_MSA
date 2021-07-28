@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.diasoft.digitalq:dslogging-spring-boot-starter:1.05.21-21061601">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/digitalq/dslogging-spring-boot-starter/1.05.21-21061601/dslogging-spring-boot-starter-1.05.21-21061601.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/digitalq/dslogging-spring-boot-starter/1.05.21-21061601/dslogging-spring-boot-starter-1.05.21-21061601-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/digitalq/dslogging-spring-boot-starter/1.05.21-21061601/dslogging-spring-boot-starter-1.05.21-21061601-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

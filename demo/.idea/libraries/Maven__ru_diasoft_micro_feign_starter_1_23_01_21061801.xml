@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.diasoft.micro:feign-starter:1.23.01-21061801">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/micro/feign-starter/1.23.01-21061801/feign-starter-1.23.01-21061801.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/micro/feign-starter/1.23.01-21061801/feign-starter-1.23.01-21061801-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/micro/feign-starter/1.23.01-21061801/feign-starter-1.23.01-21061801-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

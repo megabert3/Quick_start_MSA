@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.diasoft.digitalq.libs:dqapiexception:1.03.01-21041301">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/digitalq/libs/dqapiexception/1.03.01-21041301/dqapiexception-1.03.01-21041301.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/digitalq/libs/dqapiexception/1.03.01-21041301/dqapiexception-1.03.01-21041301-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/diasoft/digitalq/libs/dqapiexception/1.03.01-21041301/dqapiexception-1.03.01-21041301-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="autoIncrement" value="false" dbms="postgresql,mssql,oracle"/>
+    <property name="autoIncrement" value="true" dbms="h2"/>
+
+    <changeSet id="create-verification-table-v0.0.3" author="khalimov">
+
+        <createSequence sequenceName="sms_verification_seq_verification_id" incrementBy="1" startValue="1"/>
+
+        <createTable tableName="sms_verification">
+
+            <column name="verification_id" type="INT" autoIncrement="true" defaultValueSequenceNext="sms_verification_seq_verification_id">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+
+            <column name="process_guid" type="varchar(64)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="phone_number" type="varchar(64)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="secret_code" type="varchar(64)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="status" type="varchar(64)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+        <createIndex tableName="sms_verification" indexName="process_guid_index" unique="true">
+            <column name="process_guid"/>
+        </createIndex>
+
+        <createIndex tableName="sms_verification" indexName="secret_code_and_status_index" unique="false">
+            <column name="secret_code"/>
+            <column name="status"/>
+        </createIndex>
+
+    </changeSet>
+
+<!--    <changeSet id="add-test-values" author="khalimov" >
+        <sql>
+            INSERT INTO sms_verification (process_guid, phone_number, secret_code, status) VALUES '11111111', '98123138922', '1488', 'WAITING';
+            INSERT INTO sms_verification (process_guid, phone_number, secret_code, status) VALUES '22222222', '88005553535', '6969', 'OK';
+        </sql>
+    </changeSet>-->
+		
+</databaseChangeLog>
